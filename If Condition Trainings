@@ -1,0 +1,104 @@
+/*
+   Control Flow
+ 
+   - If Condition Trainings
+
+
+   4 Training Apps
+   - Even / Odd Checker 
+   - Find Greatet Number
+   - User Points Checker
+   - Simple Calculator
+   */
+
+
+
+#include <iostream>
+using namespace std; 
+
+int main()
+
+{
+	// App 1 >= Even / Odd Checker 
+	
+	int num; 
+
+	cin >> num; 
+
+	if (num % 2 == 0 )
+	{
+		cout << "the number " << num << " is even\n";
+	}
+	else
+	{
+		if (num % 1 == 0)
+		cout << "the number " << num << " is odd\n";
+
+	}
+		
+		
+	// App 2 >= Find Greatet Number
+
+	int a, b, c; 
+	cin >> a >> b >> c;
+	
+	if (a > b && a > c)
+		cout << "the greatest number is " << a << "\n";
+
+	else if (b > a && b > c)
+		cout << "the greatest number is " << b << "\n";
+	
+	else
+    cout << "the greatest number is " << c << "\n";
+	
+	
+	 //App 3 >= User points Checker
+
+	int points; 
+	cin >> points; 
+	
+	if (points > 0 && points <= 500)
+		cout << "not bad\n";
+
+	else if (points > 500 && points <= 1000)
+		cout << "very good\n";
+
+	else
+	    cout << "vip\n";
+
+
+	// App 4 >= Simple Calculator 
+
+	int num_one, num_two, operation;
+
+	cout << "Type Number_One\n";
+	cin >> num_one;
+
+	cout << "Type Number_Two\n";
+	cin >> num_two;
+
+	cout << "Choose Operation Number\n";
+	cout << "[1] +\n";
+	cout << "[2] -\n";
+	cout << "[3] /\n";
+	cout << "[4] *\n";;
+	
+	cin >> operation;
+	
+
+	if (operation == 1)
+		cout << num_one + num_two << "\n";
+
+	else if (operation == 2)
+		cout << num_one - num_two << "\n";
+
+	else if (operation == 3)
+		cout << num_one / num_two << "\n";
+
+	else if (operation == 4)
+		cout << num_one * num_two << "\n";
+
+	else
+		cout << "Operation Is Not Valid";
+	return 0;
+}
